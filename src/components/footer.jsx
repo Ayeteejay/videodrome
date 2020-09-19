@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const FooterContainer = styled(Container)`
   background-color: black;
-  padding: 5rem;
+  padding: 15% 10%;
 `;
 
 const VideoNasty = styled.div`

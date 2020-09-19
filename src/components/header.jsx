@@ -3,8 +3,9 @@ import React from "react";
 import styled from "styled-components";
 
 const HeaderNavbar = styled(Navbar)`
-  background-color: rgb(0, 217, 186);
-  padding: 4rem 5rem 0 5rem;
+  background-color: rgba(0, 217, 186, 1);
+  padding: 3% 10%;
+
   a {
     font-size: 1.5rem;
     transition: 1s;
@@ -15,6 +16,9 @@ const HeaderNavbar = styled(Navbar)`
   }
   span {
     font-weight: 700;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 8% 10% 5% 10%;
   }
 `;
 
