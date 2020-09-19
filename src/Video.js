@@ -39,6 +39,11 @@ const SeptemberRow = styled(Row)`
 const YouTubeLogo = styled(Image)`
   max-width: 150px;
 `;
+
+const VideoRow = styled.section`
+  display: grid;
+`;
+
 const App = () => {
   const [videoContent, setVideoContent] = useState(SeptData);
   const [categoryFilter, setCategoryFilter] = useState("None");
@@ -60,6 +65,22 @@ const App = () => {
         <Col sm={4}></Col>
       </IntroRow>
       <hr></hr>
+
+      <VideoRow>
+        <div>
+          <h1>Are you looking for the raddest YouTube videos?</h1>
+          <p>
+            Obscure Halloween specials? 80's fast food training videos?
+            Claymation?
+          </p>
+          <p>
+            We got you. We curated the gems of the interwebs for your viewing
+            pleasure.
+          </p>
+          <p>Let's dive in.</p>
+        </div>
+        <div></div>
+      </VideoRow>
 
       <SeptemberRow>
         <Col sm={9}>
