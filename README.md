@@ -1,1 +1,1 @@
-#Death to VIDEODROME™.
+Death to VIDEODROME™.
