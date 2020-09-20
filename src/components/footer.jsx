@@ -4,7 +4,10 @@ import styled from "styled-components";
 
 const FooterContainer = styled(Container)`
   background-color: black;
-  padding: 15% 10%;
+  padding: 5% 10%;
+  @media screen and (max-width: 480px) {
+    padding: 15% 10%;
+  }
 `;
 
 const VideoNasty = styled.div`
@@ -18,8 +21,9 @@ const VideoNasty = styled.div`
   }
   a:hover {
     text-decoration: none;
-    color: #ff0000 !important;
-    // text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.6);
+    color: rgba(242, 38, 19, 1) !important;
+    // text-shadow: 2px 2px 8px #ff0000;
+    // text-shadow: 1px 1px 5px rgba(255, 0, 0, 1);
   }
 `;
 
@@ -39,7 +43,7 @@ const VideodromeLink = styled.div`
   color: rgba(0, 217, 186, 0.6);
   :hover {
     text-decoration: none;
-    color: #ff0000 !important;
+    color: rgba(242, 38, 19, 1) !important;
   }
   span {
     font-weight: 300;

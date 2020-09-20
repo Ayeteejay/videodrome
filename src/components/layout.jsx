@@ -11,6 +11,26 @@ const MainContainer = styled(Container)`
   hr {
     border-bottom: 1px solid black;
   }
+  p {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  @media screen and (max-width: 480px) {
+    p,
+    h1,
+    h2 {
+      font-size: 2.3rem;
+      line-height: 2.8rem;
+    }
+  }
 `;
 
 const Layout = ({ children }) => {

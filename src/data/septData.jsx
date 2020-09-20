@@ -14,15 +14,19 @@ const data = [
     id: 2,
     category: "Funny",
     title: "Something New",
-    description: "Bunch of text about this",
+    description:
+      "This channel aims to educate consumers about weaknesses and defects in security devices so they can make better security decisions. It should go without saying, but I’ll say it anyway: do not use any of the information presented in my videos for illegal purposes.",
     url: "somewhere",
+    img: Laywer,
   },
   {
     id: 3,
     category: "Funny",
     title: "Something New",
-    description: "Bunch of text about this",
+    description:
+      "This channel aims to educate consumers about weaknesses and defects in security devices so they can make better security decisions. It should go without saying, but I’ll say it anyway: do not use any of the information presented in my videos for illegal purposes.",
     url: "somewhere",
+    img: Laywer,
   },
   {
     id: 4,
@@ -31,20 +35,25 @@ const data = [
     description:
       "This channel aims to educate consumers about weaknesses and defects in security devices so they can make better security decisions. It should go without saying, but I’ll say it anyway: do not use any of the information presented in my videos for illegal purposes.",
     url: "https://www.youtube.com/c/lockpickinglawyer",
+    img: Laywer,
   },
   {
     id: 5,
     category: "Funny",
     title: "Something New",
-    description: "Bunch of text about this",
+    description:
+      "This channel aims to educate consumers about weaknesses and defects in security devices so they can make better security decisions. It should go without saying, but I’ll say it anyway: do not use any of the information presented in my videos for illegal purposes.",
     url: "somewhere",
+    img: Laywer,
   },
   {
     id: 6,
     category: "Funny",
     title: "Something New",
-    description: "Bunch of text about this",
+    description:
+      "This channel aims to educate consumers about weaknesses and defects in security devices so they can make better security decisions. It should go without saying, but I’ll say it anyway: do not use any of the information presented in my videos for illegal purposes.",
     url: "somewhere",
+    img: Laywer,
   },
 ];
 export default data;

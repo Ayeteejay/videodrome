@@ -11,7 +11,7 @@ const HeaderNavbar = styled(Navbar)`
     transition: 1s;
   }
   a:hover {
-    color: #ff0000 !important;
+    color: rgba(242, 38, 19, 1) !important;
     // text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.2);
   }
   span {

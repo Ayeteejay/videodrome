@@ -11,41 +11,23 @@ import Tape from "./images/vhs-tape.jpg";
 
 const IntroRow = styled(Row)`
   padding: 8% 0 12% 0;
-  p {
-    font-size: 3rem;
-    line-height: 3.8rem;
-  }
-  h1 {
-    font-size: 3rem;
-    font-weight: 700;
-  }
-  @media screen and (max-width: 480px) {
-    p,
-    h1 {
-      font-size: 2.3rem;
-      line-height: 2.8rem;
-    }
-  }
 `;
 
 const SeptemberRow = styled(Row)`
   padding: 4rem 0;
-  h2 {
-    font-size: 3rem;
-    font-weight: 700;
-  }
-  p {
-    font-size: 3rem;
-    line-height: 3.8rem;
-  }
+  // h2 {
+  //   font-size: 3rem;
+  //   font-weight: 700;
+  // }
+  // p {
+  //   font-size: 3rem;
+  //   line-height: 3.8rem;
+  // }
 `;
 
 const VHSCol = styled.div`
   position: relative;
   padding: 15%;
-  // @media screen and (max-width: 480px) {
-  //   display: none;
-  // }
 `;
 
 const VHS = styled(Image)`
@@ -64,51 +46,57 @@ const App = () => {
   const [categoryFilter, setCategoryFilter] = useState("None");
   return (
     <Layout>
-      <IntroRow>
-        <Col sm={8}>
-          <h1>Are you looking for the raddest most obscure videos?</h1>
-          <p>Lost VHS specials? Outsider animation? Weird documentaries?</p>
-          <p>
-            We got you. We've curated the nuggets of the interwebs for your
-            viewing pleasure.
-          </p>
-          <p>Let's dive in.</p>
-        </Col>
-        <Col sm={4}>
-          <VHSCol>
-            <VHS src={Tape} fluid />
-          </VHSCol>
-        </Col>
-      </IntroRow>
+      <Fade>
+        <IntroRow>
+          <Col sm={8}>
+            <h1>Are you looking for the raddest most obscure videos?</h1>
+            <p>Lost VHS specials? Outsider animation? Weird documentaries?</p>
+            <p>
+              We got you. We've curated the nuggets of the interwebs for your
+              viewing pleasure.
+            </p>
+            <p>Let's dive in.</p>
+          </Col>
+          <Col sm={4}>
+            <VHSCol>
+              <VHS src={Tape} fluid />
+            </VHSCol>
+          </Col>
+        </IntroRow>
+      </Fade>
       <hr></hr>
-      <SeptemberRow>
-        <Col sm={9}>
-          <h2>September</h2>
-          <p>Some good, some bad.</p>
-        </Col>
-        <Col sm={3}>
-          <Dropdown>
-            <Dropdown.Toggle>Filter</Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item onSelect={() => setCategoryFilter("Animation")}>
-                Animation
-              </Dropdown.Item>
-              <Dropdown.Item onSelect={() => setCategoryFilter("Funny")}>
-                Funny
-              </Dropdown.Item>
-              <Dropdown.Item onSelect={() => setCategoryFilter("None")}>
-                None
-              </Dropdown.Item>
-            </Dropdown.Menu>
-            <h1>Selected: {categoryFilter}</h1>
-          </Dropdown>
-        </Col>
-      </SeptemberRow>
-      <Row>
-        {videoContent.map((value) => {
-          return <Videoblock key={value.id} videoStuff={value}></Videoblock>;
-        })}
-      </Row>
+      <Fade>
+        <SeptemberRow>
+          <Col sm={9}>
+            <h2>September</h2>
+            <p>Some good, some bad.</p>
+          </Col>
+          <Col sm={3}>
+            <Dropdown>
+              <Dropdown.Toggle>Filter</Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item onSelect={() => setCategoryFilter("Animation")}>
+                  Animation
+                </Dropdown.Item>
+                <Dropdown.Item onSelect={() => setCategoryFilter("Funny")}>
+                  Funny
+                </Dropdown.Item>
+                <Dropdown.Item onSelect={() => setCategoryFilter("None")}>
+                  None
+                </Dropdown.Item>
+              </Dropdown.Menu>
+              <h1>Selected: {categoryFilter}</h1>
+            </Dropdown>
+          </Col>
+        </SeptemberRow>
+      </Fade>
+      <Fade>
+        <Row>
+          {videoContent.map((value) => {
+            return <Videoblock key={value.id} videoStuff={value}></Videoblock>;
+          })}
+        </Row>
+      </Fade>
     </Layout>
   );
 };
